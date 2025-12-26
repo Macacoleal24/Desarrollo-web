@@ -62,6 +62,9 @@ body{
 }
 
 .hero {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/Gemini_Generated_Image_re2e27re2e27re2e.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+
 }
