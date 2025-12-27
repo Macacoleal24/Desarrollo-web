@@ -12,6 +12,11 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -19,9 +24,19 @@ body{
     font-family: 'Tinos', serif;
 }
 
-.title{
-    text-align: center;
+h1{
     font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center;
 }
 
 .title span{
@@ -62,9 +77,30 @@ body{
 }
 
 .hero {
-    background-image: url(../img/Gemini_Generated_Image_re2e27re2e27re2e.png);
+    background-image: url(../img/Gemini_Generated_Image_re2e27re2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
+    position: relative;
+}
+.hero-content{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2,
+.hero-content p{
+    color: var(--white);
+}
+.location{
+    display: flex;
+    align-items: flex-start;
 }
