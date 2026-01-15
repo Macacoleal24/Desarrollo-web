@@ -1,3 +1,4 @@
+/* Variables de diseño global */
 :root {
     --bg-color: #fafafa;
     --surface-color: #ffffff;
@@ -20,6 +21,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Tipografía y layout base */
 body {
     font-size: 1.6rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -54,6 +56,7 @@ p {
 
 .text-center { text-align: center; }
 
+/* Navegación principal */
 .nav-bg {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
@@ -122,6 +125,7 @@ header {
     margin-top: 1rem;
 }
 
+/* Sección hero con fondo animado */
 .hero {
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); 
     height: 50rem;
@@ -199,6 +203,7 @@ main {
     padding: 0 2rem;
 }
 
+/* Sección “Mis conocimientos” */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +239,7 @@ section svg {
     opacity: 0.9;
 }
 
+/* Página de proyectos */
 .projects-page {
     max-width: 120rem;
     margin: 0 auto 6rem;
@@ -292,6 +298,7 @@ section svg {
     flex: 1;
 }
 
+/* Experiencia laboral (carrusel) */
 .experience-section {
     margin-bottom: 6rem;
 }
@@ -393,6 +400,7 @@ section svg {
     }
 }
 
+/* Formulario de contacto */
 #mis-redes {
     max-width: 60rem;
     margin: 10rem auto 6rem;
@@ -464,6 +472,40 @@ input[type="submit"]:hover {
     box-shadow: var(--shadow-md);
 }
 
+/* Página del juego Shrouded in Darkness */
+.shrouded-main {
+    max-width: 100rem;
+    margin: 0 auto 6rem;
+    padding: 0 2rem;
+}
+
+.shrouded-hero {
+    text-align: center;
+    margin: 4rem 0 3rem;
+}
+
+.shrouded-hero p {
+    max-width: 60rem;
+    margin: 1rem auto 0;
+}
+
+.shrouded-game {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.shrouded-page #unity-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.shrouded-page #unity-canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pie de página */
 footer {
     text-align: center;
     padding: 3rem 0;

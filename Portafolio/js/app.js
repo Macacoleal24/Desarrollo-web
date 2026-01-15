@@ -1,3 +1,4 @@
+// Configuración del fondo animado con Particles.js
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -104,6 +105,7 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
+// Lógica del carrusel de experiencia laboral
 (function () {
   var carousel = document.querySelector('.experience-carousel');
   if (!carousel) return;
