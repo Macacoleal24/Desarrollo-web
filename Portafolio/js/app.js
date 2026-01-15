@@ -1,23 +1,17 @@
-/* 
-   Configuración de Particles.js 
-   -----------------------------
-   Aquí definimos cómo se ven y comportan las partículas.
-*/
-
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 60, /* Cantidad de partículas (menos es más minimalista) */
+      "value": 60,
       "density": {
         "enable": true,
-        "value_area": 800 /* Área donde se distribuyen */
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#2d3748" /* Color de los puntos (gris azulado suave) */
+      "value": "#2d3748"
     },
     "shape": {
-      "type": "circle", /* Forma: circle, edge, triangle, polygon, star, image */
+      "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -27,7 +21,7 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.5, /* Transparencia de los puntos (0 a 1) */
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
@@ -37,8 +31,8 @@ particlesJS("particles-js", {
       }
     },
     "size": {
-      "value": 3, /* Tamaño de los puntos */
-      "random": true, /* ¿Tamaños variados? */
+      "value": 3,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 40,
@@ -47,16 +41,16 @@ particlesJS("particles-js", {
       }
     },
     "line_linked": {
-      "enable": true, /* ¿Unir puntos con líneas? (Efecto red) */
-      "distance": 150, /* Distancia máxima para unirse */
-      "color": "#cbd5e1", /* Color de las líneas (gris muy claro) */
+      "enable": true,
+      "distance": 150,
+      "color": "#cbd5e1",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 2, /* Velocidad de movimiento (más bajo = más relajante) */
-      "direction": "none", /* Dirección: none, top, top-right, etc. */
+      "speed": 2,
+      "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
@@ -73,11 +67,11 @@ particlesJS("particles-js", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab" /* Al pasar el mouse: grab (conectar), bubble (agrandar), repulse (alejar) */
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
-        "mode": "push" /* Al hacer clic: push (añadir más), remove, bubble, repulse */
+        "mode": "push"
       },
       "resize": true
     },
@@ -110,7 +104,6 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
-// Carrusel de Experiencia Laboral
 (function () {
   var carousel = document.querySelector('.experience-carousel');
   if (!carousel) return;
