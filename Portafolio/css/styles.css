@@ -400,76 +400,50 @@ section svg {
     }
 }
 
-/* Formulario de contacto */
+/* Redes Sociales */
 #mis-redes {
     max-width: 60rem;
     margin: 10rem auto 6rem;
     padding: 0 2rem;
+    text-align: center;
 }
 
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
 }
 
-legend {
-    display: none;
-}
-
-form div {
-    margin-bottom: 2rem;
-}
-
-label {
-    display: block;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: var(--primary-color);
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 1.2rem 1.5rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
-    background-color: var(--surface-color);
-    font-family: inherit;
-    transition: border-color 0.3s ease;
-    outline: none;
-}
-
-input:focus,
-textarea:focus {
-    border-color: var(--accent-color);
-}
-
-textarea {
-    height: 12rem;
-    resize: vertical;
-}
-
-input[type="submit"] {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1.2rem 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    color: var(--text-secondary);
     transition: all 0.3s ease;
-    width: 100%;
+    border-radius: 50%;
 }
 
-input[type="submit"]:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+.social-btn svg {
+    width: 48px;
+    height: 48px;
+    stroke-width: 1.5;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: var(--accent-color);
+    background-color: rgba(0,0,0,0.03);
+}
+
+.social-btn.linkedin:hover {
+    color: #0077b5;
+}
+
+.social-btn.github:hover {
+    color: #24292e;
 }
 
 /* Página del juego Shrouded in Darkness */
